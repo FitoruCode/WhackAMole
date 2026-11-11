@@ -117,7 +117,7 @@ pyautogui.PAUSE = 0.052
 pyautogui.MINIMUM_DURATION = 0
 DURATION = 61
 
-background = cv2.imread('./imgs/grab_0025.png', cv2.IMREAD_COLOR)
+background = cv2.imread('./imgs/bg.png', cv2.IMREAD_COLOR)
 sct = mss()
 monitor = next((m for m in sct.monitors[1:] if m["width"] > 0 and m["height"] > 0), sct.monitors[0])
 left = monitor["left"]
